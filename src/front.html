@@ -16,14 +16,16 @@
     letter-spacing: .08em; text-transform: uppercase; border-bottom: 2px solid #16181d; padding-bottom: 4px; }
   .topbar .k { color: #b3261e; }
   h1 { font-family: Georgia, serif; font-weight: 700; font-size: 66px; line-height: 1; text-align: center;
-    letter-spacing: -1.5px; margin-top: 5px; white-space: nowrap; }
-  .deck { font-family: Georgia, serif; font-style: italic; font-size: 14.5px; text-align: center; margin: 4px 0 6px;
-    padding-bottom: 6px; border-bottom: 1px solid #16181d; }
+    letter-spacing: -1.5px; margin-top: 3px; white-space: nowrap; }
+  .deck { font-family: Georgia, serif; font-style: italic; font-size: 14.5px; text-align: center; margin: 2px 0 5px;
+    padding-bottom: 5px; border-bottom: 1px solid #16181d; }
   .nums { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; margin-bottom: 7px; }
   .nums div { border-left: 3px solid #b3261e; padding: 0 6px; }
   .nums b { display: block; font-family: Georgia, serif; font-size: 21px; line-height: 1.05; }
   .nums span { display: block; font-size: 10.5px; line-height: 1.2; color: #3b3f48; }
 
+  .regions { display: flex; gap: 2px; margin: -2px 0 6px; }
+  .regions span { color: #fff; font-size: 10px; font-weight: 800; text-align: center; padding: 1px 0; letter-spacing: .03em; }
   .leads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 7px; }
   .card svg { display: block; width: 100%; border-radius: 3px; }
   .kick { display: flex; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 800; letter-spacing: .05em;
@@ -69,6 +71,11 @@
   <div><b>100,000</b><span>UK–EU youth visas a year in Friday's deal</span></div>
 </div>
 
+<div class="regions">
+  <span style="background:#2f5d9e;flex:7">Europe 7</span><span style="background:#b3261e;flex:8">Asia 8</span><span style="background:#c07a12;flex:4">Middle East 4</span>
+  <span style="background:#3d8b45;flex:3">Africa 3</span><span style="background:#7b4fa0;flex:3">Americas 3</span><span style="background:#1f8a8a;flex:2">Oceania 2</span><span style="background:#555b66;flex:1.4">Global 1</span>
+</div>
+
 <!-- ===================== THREE LEAD STORIES ===================== -->
 <div class="leads">
 
@@ -101,7 +108,7 @@
       </g>
       <g stroke="#c9ced8" stroke-width="1.5" fill="none"><path d="M20 86 Q 65 62 110 86"/><path d="M212 86 Q 260 60 308 86"/></g>
       <circle cx="70" cy="84" r="17" fill="url(#boom)"/><circle cx="162" cy="84" r="15" fill="url(#boom)"/><circle cx="254" cy="84" r="17" fill="url(#boom)"/>
-      <rect x="6" y="6" width="62" height="20" fill="#b3261e"/><text x="37" y="21" font-family="Segoe UI,Arial" font-weight="800" font-size="13.5" fill="#fff" text-anchor="middle">KYIV</text>
+      <text class="chip" x="6" y="6" data-s="19">KYIV</text>
       <rect x="6" y="112" width="128" height="16" fill="#fff"/><text x="70" y="124" font-family="Segoe UI,Arial" font-weight="700" font-size="11" fill="#16181d" text-anchor="middle">3 bridges hit overnight</text>
     </svg>
     <div class="kick"><span class="n">1</span>Kyiv, Ukraine · War<span class="tag t-off">OFFICIAL</span></div>
@@ -123,7 +130,7 @@
         <text x="168" y="94" fill="#d6dbe5">KOSPI</text><text x="314" y="94" fill="#ff6b6b" text-anchor="end">−5.2%</text>
         <text x="168" y="112" fill="#d6dbe5">NIKKEI</text><text x="314" y="112" fill="#ff6b6b" text-anchor="end">−5.1%</text>
       </g>
-      <rect x="6" y="6" width="112" height="20" fill="#b3261e"/><text x="62" y="21" font-family="Segoe UI,Arial" font-weight="800" font-size="13.5" fill="#fff" text-anchor="middle">AI SELL-OFF</text>
+      <text class="chip" x="6" y="6" data-s="19">AI SELL-OFF</text>
       <rect x="6" y="112" width="132" height="16" fill="#fff"/><text x="72" y="124" font-family="Segoe UI,Arial" font-weight="700" font-size="11" fill="#16181d" text-anchor="middle">Friday's closing moves</text>
     </svg>
     <div class="kick"><span class="n">2</span>New York · Taipei · Tokyo · Markets<span class="tag t-con">CONFIRMED</span></div>
@@ -137,8 +144,8 @@
       <!-- land: India's east coast -->
       <path d="M0 0 H210 L198 18 L184 30 L170 44 L150 58 L128 74 L110 92 L96 112 L86 132 H0 Z" fill="#e8dcb5"/>
       <path d="M210 0 L198 18 L184 30 L170 44 L150 58 L128 74 L110 92 L96 112 L86 132" fill="none" stroke="#b9a777" stroke-width="2"/>
-      <text x="40" y="40" font-family="Segoe UI,Arial" font-weight="800" font-size="13" fill="#6b5a2e">ODISHA</text>
-      <text x="40" y="56" font-family="Segoe UI,Arial" font-size="11" fill="#6b5a2e">INDIA</text>
+      <text x="14" y="52" font-family="Segoe UI,Arial" font-weight="800" font-size="13" fill="#6b5a2e">ODISHA</text>
+      <text x="14" y="66" font-family="Segoe UI,Arial" font-size="11" fill="#6b5a2e">INDIA</text>
       <text x="236" y="122" font-family="Segoe UI,Arial" font-weight="700" font-size="10.5" fill="#cfe3f7">BAY OF BENGAL</text>
       <!-- cyclone spiral -->
       <g transform="translate(214,70)" fill="none" stroke="#ffffff" stroke-linecap="round">
@@ -150,7 +157,7 @@
       <path d="M196 76 L150 66" stroke="#ffd24d" stroke-width="2.5" stroke-dasharray="5 3"/>
       <circle cx="146" cy="64" r="5" fill="#b3261e" stroke="#fff" stroke-width="2"/>
       <rect x="64" y="70" width="70" height="16" fill="#fff"/><text x="99" y="82" font-family="Segoe UI,Arial" font-weight="700" font-size="11" fill="#16181d" text-anchor="middle">Gopalpur</text>
-      <rect x="6" y="6" width="134" height="20" fill="#b3261e"/><text x="73" y="21" font-family="Segoe UI,Arial" font-weight="800" font-size="13.5" fill="#fff" text-anchor="middle">CYCLONE AKVAN</text>
+      <text class="chip" x="6" y="6" data-s="19">CYCLONE AKVAN</text>
       <rect x="6" y="112" width="120" height="16" fill="#fff"/><text x="66" y="124" font-family="Segoe UI,Arial" font-weight="700" font-size="11" fill="#16181d" text-anchor="middle">Landfall Friday morning</text>
     </svg>
     <div class="kick"><span class="n">3</span>Gopalpur, India · Weather<span class="tag t-off">OFFICIAL</span></div>
@@ -165,10 +172,10 @@
   <div class="card small">
     <svg viewBox="0 0 190 68">
       <rect width="190" height="70" fill="#00337a"/>
-      <g fill="#ffcc00"><circle cx="40" cy="14" r="2.6"/><circle cx="52" cy="17" r="2.6"/><circle cx="60" cy="26" r="2.6"/><circle cx="62" cy="38" r="2.6"/><circle cx="56" cy="48" r="2.6"/><circle cx="44" cy="53" r="2.6"/><circle cx="31" cy="50" r="2.6"/><circle cx="22" cy="42" r="2.6"/><circle cx="20" cy="30" r="2.6"/><circle cx="26" cy="19" r="2.6"/></g>
+      <g fill="#ffcc00" transform="translate(0,6)"><circle cx="40" cy="14" r="2.6"/><circle cx="52" cy="17" r="2.6"/><circle cx="60" cy="26" r="2.6"/><circle cx="62" cy="38" r="2.6"/><circle cx="56" cy="48" r="2.6"/><circle cx="44" cy="53" r="2.6"/><circle cx="31" cy="50" r="2.6"/><circle cx="22" cy="42" r="2.6"/><circle cx="20" cy="30" r="2.6"/><circle cx="26" cy="19" r="2.6"/></g>
       <g transform="translate(96,0)"><rect width="94" height="70" fill="#012169"/><path d="M0 0 L94 70 M94 0 L0 70" stroke="#fff" stroke-width="12"/><path d="M0 0 L94 70 M94 0 L0 70" stroke="#c8102e" stroke-width="4"/><path d="M47 0 V70 M0 35 H94" stroke="#fff" stroke-width="18"/><path d="M47 0 V70 M0 35 H94" stroke="#c8102e" stroke-width="10"/></g>
       <path d="M70 46 q12 -10 26 -6 q14 -4 26 6 l-6 8 q-10 -6 -20 -2 q-10 -4 -20 2z" fill="#f2c9a0" stroke="#8a5a36" stroke-width="1.5"/>
-      <rect x="4" y="4" width="84" height="15" fill="#b3261e"/><text x="46" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">UK–EU DEAL</text>
+      <text class="chip" x="4" y="4" data-s="14">UK–EU DEAL</text>
     </svg>
     <div class="kick"><span class="n">4</span>Brussels · Diplomacy</div>
     <h3>UK and EU seal a food, carbon and visa deal</h3>
@@ -181,7 +188,7 @@
       <circle cx="48" cy="40" r="24" fill="#3a86c8"/><path d="M36 26 q8 4 6 12 q-8 2 -10 10 q-6 -6 -4 -14z M52 20 q10 2 14 10 q-6 6 -2 14 q-8 -2 -10 -8 q-6 -8 -2 -16z" fill="#5fae5a"/>
       <circle cx="132" cy="40" r="22" fill="#fff" stroke="#16181d" stroke-width="3"/><path d="M132 40 V24 M132 40 L144 46" stroke="#b3261e" stroke-width="3" stroke-linecap="round"/>
       <text x="168" y="62" font-family="Segoe UI,Arial" font-weight="800" font-size="10" fill="#16181d" text-anchor="middle">+ OT</text>
-      <rect x="4" y="4" width="98" height="15" fill="#b3261e"/><text x="53" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">COP31: NO DEAL</text>
+      <text class="chip" x="4" y="4" data-s="14">COP31: NO DEAL</text>
     </svg>
     <div class="kick"><span class="n">5</span>Antalya · Climate</div>
     <h3>COP31 heads into overtime with no deal</h3>
@@ -195,7 +202,7 @@
       <rect x="104" y="34" width="46" height="16" rx="2"/><rect x="116" y="26" width="22" height="10" rx="2"/><rect x="136" y="29" width="26" height="3"/></g>
       <g fill="#2f3624"><circle cx="34" cy="51" r="5"/><circle cx="64" cy="51" r="5"/><circle cx="112" cy="51" r="5"/><circle cx="142" cy="51" r="5"/></g>
       <g transform="translate(164,8)"><rect width="22" height="5" fill="#ce1126"/><rect y="5" width="22" height="5" fill="#fff"/><rect y="10" width="22" height="5" fill="#000"/><rect x="-1" y="0" width="1.5" height="34" fill="#444"/></g>
-      <rect x="4" y="4" width="98" height="15" fill="#b3261e"/><text x="53" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">IRAQ: ARMY IN</text>
+      <text class="chip" x="4" y="4" data-s="14">IRAQ: ARMY IN</text>
     </svg>
     <div class="kick"><span class="n">6</span>Jurf al-Sakhar, Iraq · Security</div>
     <h3>Iraqi forces enter a militia stronghold</h3>
@@ -214,9 +221,9 @@
         <circle cx="140" cy="38" r="6"/><rect x="133" y="45" width="14" height="25" rx="5"/>
         <circle cx="164" cy="41" r="6"/><rect x="157" y="48" width="14" height="22" rx="5"/>
       </g>
-      <g><rect x="164" y="8" width="1.5" height="30" fill="#444"/><rect x="165.5" y="8" width="7" height="12" fill="#009246"/><rect x="172.5" y="8" width="7" height="12" fill="#fff"/><rect x="179.5" y="8" width="7" height="12" fill="#ce2b37"/></g>
-      <rect x="104" y="22" width="68" height="14" fill="#b3261e"/><text x="138" y="32.5" font-family="Segoe UI,Arial" font-weight="800" font-size="9.5" fill="#fff" text-anchor="middle">SCIOPERO</text>
-      <rect x="4" y="4" width="92" height="15" fill="#b3261e"/><text x="50" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">ITALY: STRIKE</text>
+      <g><rect x="164" y="6" width="1.5" height="22" fill="#444"/><rect x="165.5" y="6" width="7" height="10" fill="#009246"/><rect x="172.5" y="6" width="7" height="10" fill="#fff"/><rect x="179.5" y="6" width="7" height="10" fill="#ce2b37"/></g>
+      <rect x="112" y="31" width="70" height="15" fill="#16181d"/><text x="147" y="42.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">SCIOPERO</text>
+      <text class="chip" x="4" y="4" data-s="14">ITALY: STRIKE</text>
     </svg>
     <div class="kick"><span class="n">7</span>Rome, Italy · Labour</div>
     <h3>General strike over Meloni's budget</h3>
@@ -226,11 +233,11 @@
   <div class="card small">
     <svg viewBox="0 0 190 68">
       <rect width="190" height="70" fill="#e7e2f2"/>
-      <rect x="22" y="44" width="60" height="8" fill="#6b4a2b"/><rect x="34" y="14" width="40" height="14" rx="3" fill="#8a6036" transform="rotate(-25 54 21)"/><rect x="52" y="22" width="5" height="30" fill="#6b4a2b" transform="rotate(-25 54 37)"/>
+      <rect x="20" y="56" width="62" height="8" fill="#6b4a2b"/><rect x="34" y="30" width="38" height="13" rx="3" fill="#8a6036" transform="rotate(-25 53 36)"/><rect x="51" y="38" width="5" height="22" fill="#6b4a2b" transform="rotate(-25 53 49)"/>
       <rect x="104" y="12" width="64" height="46" fill="#fff" stroke="#9aa3b3" stroke-width="1.5"/>
       <g stroke="#c3c9d4" stroke-width="2"><path d="M112 22 H160 M112 30 H160 M112 38 H150 M112 46 H156"/></g>
       <g transform="rotate(-14 136 35)"><rect x="104" y="26" width="64" height="18" fill="none" stroke="#b3261e" stroke-width="2.5"/><text x="136" y="40" font-family="Segoe UI,Arial" font-weight="900" font-size="11.5" fill="#b3261e" text-anchor="middle">REJECTED</text></g>
-      <rect x="4" y="4" width="88" height="15" fill="#b3261e"/><text x="48" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">"UNFAIR"</text>
+      <text class="chip" x="4" y="4" data-s="14">"UNFAIR"</text>
     </svg>
     <div class="kick"><span class="n">8</span>Naypyidaw, Myanmar · Law</div>
     <h3>Myanmar rejects the ICJ genocide ruling</h3>
@@ -244,11 +251,11 @@
     <svg viewBox="0 0 190 68">
       <rect width="190" height="70" fill="#f3e3c4"/>
       
-      <path d="M60 64 L76 10 L92 64 Z M66 44 H86 M70 30 H82" fill="none" stroke="#16181d" stroke-width="3"/>
-      <rect x="70" y="6" width="12" height="6" fill="#16181d"/>
+      <path d="M84 64 L100 18 L116 64 Z M90 46 H110 M94 32 H106" fill="none" stroke="#16181d" stroke-width="3"/>
+      <rect x="94" y="13" width="12" height="6" fill="#16181d"/>
       <rect y="60" width="190" height="10" fill="#b58a52"/>
-      <g transform="translate(122,22)"><rect width="52" height="8" fill="#000"/><rect y="8" width="52" height="2" fill="#fff"/><rect y="10" width="52" height="8" fill="#bb0000"/><rect y="18" width="52" height="2" fill="#fff"/><rect y="20" width="52" height="8" fill="#006600"/><ellipse cx="26" cy="14" rx="5" ry="11" fill="#bb0000" stroke="#000" stroke-width="1"/></g>
-      <rect x="4" y="4" width="64" height="15" fill="#b3261e"/><text x="36" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">KENYA OIL</text>
+      <g transform="translate(130,26)"><rect width="52" height="8" fill="#000"/><rect y="8" width="52" height="2" fill="#fff"/><rect y="10" width="52" height="8" fill="#bb0000"/><rect y="18" width="52" height="2" fill="#fff"/><rect y="20" width="52" height="8" fill="#006600"/><ellipse cx="26" cy="14" rx="5" ry="11" fill="#bb0000" stroke="#000" stroke-width="1"/></g>
+      <text class="chip" x="4" y="4" data-s="14">KENYA OIL</text>
     </svg>
     <div class="kick"><span class="n">9</span>Turkana, Kenya · Energy</div>
     <h3>Kenya starts drilling for its first oil</h3>
@@ -262,7 +269,7 @@
       <rect x="44" y="26" width="102" height="6" fill="#aab3c2"/>
       <g fill="#fff" stroke="#5a6478" stroke-width="1.5"><rect x="52" y="32" width="8" height="26"/><rect x="72" y="32" width="8" height="26"/><rect x="92" y="32" width="8" height="26"/><rect x="112" y="32" width="8" height="26"/><rect x="132" y="32" width="8" height="26"/></g>
       <rect x="38" y="58" width="114" height="8" fill="#aab3c2"/>
-      <rect x="4" y="4" width="84" height="15" fill="#b3261e"/><text x="46" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">IMPEACH?</text>
+      <text class="chip" x="4" y="4" data-s="14">IMPEACH?</text>
     </svg>
     <div class="kick"><span class="n">10</span>Seoul · Politics</div>
     <h3>Seoul's ruling party moves to impeach top judge</h3>
@@ -277,7 +284,7 @@
       <rect x="144" y="26" width="14" height="36" fill="#b3261e"/>
       <text x="151" y="21" font-family="Segoe UI,Arial" font-weight="800" font-size="10" fill="#b3261e" text-anchor="middle">OCT</text>
       <rect x="78" y="62" width="88" height="2" fill="#16181d"/>
-      <rect x="4" y="4" width="82" height="15" fill="#b3261e"/><text x="45" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">JAPAN: 2.3%</text>
+      <text class="chip" x="4" y="4" data-s="14">JAPAN: 2.3%</text>
     </svg>
     <div class="kick"><span class="n">11</span>Tokyo · Economy</div>
     <h3>Japan's inflation rises to 2.3%</h3>
@@ -291,7 +298,7 @@
       <g transform="translate(150,14) rotate(30)"><rect x="0" y="0" width="12" height="46" rx="3" fill="#d9b98a" stroke="#8a6a3a" stroke-width="1.5"/><rect x="3" y="-16" width="6" height="18" fill="#3c3c3c"/></g>
       <circle cx="110" cy="40" r="7" fill="#c8102e"/><path d="M104 37 q6 3 12 0" stroke="#fff" stroke-width="1" fill="none"/>
       <text x="52" y="54" font-family="Georgia" font-weight="700" font-size="28" fill="#16181d" text-anchor="middle">118</text>
-      <rect x="4" y="4" width="92" height="15" fill="#b3261e"/><text x="50" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">PHILLIPS: 118</text>
+      <text class="chip" x="4" y="4" data-s="14">PHILLIPS: 118</text>
     </svg>
     <div class="kick"><span class="n">12</span>Wellington · Cricket</div>
     <h3>Phillips hits 118 against India</h3>
@@ -301,10 +308,10 @@
   <div class="card small">
     <svg viewBox="0 0 190 68">
       <rect width="190" height="70" fill="#f4e7d0"/>
-      <rect x="150" y="4" width="36" height="11" fill="#fff" stroke="#999" stroke-width=".5"/><rect x="150" y="15" width="36" height="11" fill="#dc143c"/>
-      <g transform="translate(36,34) rotate(-12)"><rect width="70" height="16" rx="8" fill="#e8b23a"/><rect x="-14" y="8" width="0" height="0"/><path d="M0 8 h-12" stroke="#ff8a2a" stroke-width="5"/></g>
-      <g transform="translate(112,38) rotate(-8)"><rect width="56" height="14" rx="7" fill="#e8b23a"/><path d="M0 7 h-10" stroke="#ff8a2a" stroke-width="5"/></g>
-      <rect x="4" y="4" width="124" height="15" fill="#b3261e"/><text x="66" y="15.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">POLAND: 2 MISSILES</text>
+      <rect x="156" y="30" width="30" height="9" fill="#fff" stroke="#999" stroke-width=".5"/><rect x="156" y="39" width="30" height="9" fill="#dc143c"/>
+      <g transform="translate(30,40) rotate(-12)"><rect width="70" height="16" rx="8" fill="#e8b23a"/><rect x="-14" y="8" width="0" height="0"/><path d="M0 8 h-12" stroke="#ff8a2a" stroke-width="5"/></g>
+      <g transform="translate(96,46) rotate(-8)"><rect width="56" height="14" rx="7" fill="#e8b23a"/><path d="M0 7 h-10" stroke="#ff8a2a" stroke-width="5"/></g>
+      <text class="chip" x="4" y="4" data-s="14">POLAND: 2 MISSILES</text>
       <path d="M0 62 Q 50 54 100 62 T 190 60 V70 H0Z" fill="#7aa05a"/>
     </svg>
     <div class="kick"><span class="n">13</span>Eastern Poland · NATO</div>
@@ -368,6 +375,17 @@
     [[172,-35],[178,-38],[174,-41],[167,-46],[171,-44]]
   ];
   const NS = 'http://www.w3.org/2000/svg';
+  // Story labels: big white capitals on a red chip sized to the text, so they read at thumbnail size.
+  for (const t of document.querySelectorAll('text.chip')) {
+    const x = +t.getAttribute('x'), y = +t.getAttribute('y'), fs = +t.dataset.s, pad = Math.round(fs * 0.35);
+    Object.assign(t.style, { fontFamily: 'Segoe UI, Arial', fontWeight: 800, fontSize: fs + 'px', fill: '#fff' });
+    t.setAttribute('x', x + pad); t.setAttribute('y', y + fs * 0.98);
+    const w = t.getComputedTextLength();
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', w + 2 * pad); r.setAttribute('height', fs * 1.3);
+    r.setAttribute('fill', '#b3261e');
+    t.parentNode.insertBefore(r, t);
+  }
   const land = document.getElementById('land');
   for (const r of rings) {
     const el = document.createElementNS(NS, 'polygon');
