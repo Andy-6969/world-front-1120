@@ -21,12 +21,12 @@
     padding-bottom: 5px; border-bottom: 1px solid #16181d; }
   .nums { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; margin-bottom: 7px; }
   .nums div { border-left: 3px solid #b3261e; padding: 0 6px; }
-  .nums b { display: block; font-family: "Segoe UI", Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 1.05; }
+  .nums b { display: block; font-family: Georgia, serif; font-size: 21px; line-height: 1.05; }
   .nums span { display: block; font-size: 10.5px; line-height: 1.2; color: #3b3f48; }
 
   .regions { display: flex; gap: 2px; margin: -2px 0 6px; }
   .regions span { color: #fff; font-size: 10px; font-weight: 800; text-align: center; padding: 1px 0; letter-spacing: .03em; }
-  .leads { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 7px; }
+  .leads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 7px; }
   .card svg { display: block; width: 100%; border-radius: 3px; }
   .kick { display: flex; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 800; letter-spacing: .05em;
     text-transform: uppercase; color: #b3261e; margin-top: 4px; white-space: nowrap; }
@@ -36,19 +36,19 @@
   .t-off { background: #fde9a8; color: #6b4e00; border: 1px solid #c9a227; }
   .t-con { background: #d8efd9; color: #1d5e25; border: 1px solid #3d8b45; }
   .t-rep { background: #e2e6ee; color: #39414f; border: 1px solid #7d8696; }
-  .lead h2 { font-family: "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 25px; line-height: 1.08; margin-top: 2px; letter-spacing: -.3px; }
+  .lead h2 { font-family: Georgia, serif; font-size: 21px; line-height: 1.1; margin-top: 2px; }
   .lead p { font-size: 11.8px; line-height: 1.3; margin-top: 3px; color: #2a2d34; }
   .src { color: #6a6f7a; }
 
-  .grid5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 6px; }
-  .small h3 { font-family: "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 17.5px; line-height: 1.08; margin-top: 1px; letter-spacing: -.2px; }
-  .small p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 10.8px; line-height: 1.25; margin-top: 2px; color: #2a2d34; }
+  .grid5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 6px; }
+  .small h3 { font-family: Georgia, serif; font-size: 14.6px; line-height: 1.1; margin-top: 1px; }
+  .small p { font-size: 10.5px; line-height: 1.25; margin-top: 2px; color: #2a2d34; }
   .small .kick { font-size: 9.5px; margin-top: 3px; }
   .small .n { width: 14px; height: 14px; font-size: 9px; }
 
   .bottom { display: grid; grid-template-columns: 290px 1fr; gap: 12px; border-top: 2px solid #16181d; padding-top: 5px; }
   .sec { font-size: 10.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: #b3261e; margin-bottom: 3px; }
-  .briefs { columns: 2; column-gap: 14px; font-size: 11.2px; line-height: 1.36; }
+  .briefs { columns: 2; column-gap: 14px; font-size: 11.2px; line-height: 1.3; }
   .briefs div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .briefs div { break-inside: avoid; }
   .briefs b.i { display: inline-block; width: 15px; color: #b3261e; }
@@ -59,7 +59,7 @@
 </head>
 <body>
 
-<div class="topbar"><span class="k">The world in one day</span><span>33 stories · 6 regions · every one from Friday 20 November 2026</span></div>
+<div class="topbar"><span class="k">The world in one day</span><span>35 stories · 6 regions · every one from Friday 20 November 2026</span></div>
 <h1>Friday 20 November 2026</h1>
 <div class="deck">Russian missiles hit Kyiv's bridges and land in Poland · An AI sell-off drives Wall Street into a correction · Cyclone Akvan strikes India</div>
 
@@ -73,8 +73,8 @@
 </div>
 
 <div class="regions">
-  <span style="background:#2f5d9e;flex:8">Europe 8</span><span style="background:#b3261e;flex:8">Asia 8</span><span style="background:#c07a12;flex:5">Middle East 5</span>
-  <span style="background:#3d8b45;flex:4">Africa 4</span><span style="background:#7b4fa0;flex:4">Americas 4</span><span style="background:#1f8a8a;flex:2.2">Oceania 2</span><span style="background:#555b66;flex:2.2">Global 2</span>
+  <span style="background:#2f5d9e;flex:8">Europe 8</span><span style="background:#b3261e;flex:9">Asia 9</span><span style="background:#c07a12;flex:5">Middle East 5</span>
+  <span style="background:#3d8b45;flex:4">Africa 4</span><span style="background:#7b4fa0;flex:5">Americas 5</span><span style="background:#1f8a8a;flex:2.2">Oceania 2</span><span style="background:#555b66;flex:2.2">Global 2</span>
 </div>
 
 <!-- ===================== THREE LEAD STORIES ===================== -->
@@ -114,7 +114,7 @@
     </svg>
     <div class="kick"><span class="n">1</span>Kyiv, Ukraine · War<span class="tag t-off">OFFICIAL</span></div>
     <h2>Russian missiles hit three of Kyiv's bridges</h2>
-    <p>110+ missiles and 400 drones overnight; at least 8 killed across Ukraine, 6 in Kyiv. <span class="src">(Ukraine's PM, Kyiv mayor)</span></p>
+    <p>One of the war's biggest barrages: 110+ missiles and 400 drones overnight; at least 8 killed across Ukraine, 6 of them in Kyiv. <span class="src">(Ukraine's PM, Kyiv mayor)</span></p>
   </div>
 
   <div class="card lead">
@@ -136,7 +136,7 @@
     </svg>
     <div class="kick"><span class="n">2</span>New York · Taipei · Tokyo · Markets<span class="tag t-con">CONFIRMED</span></div>
     <h2>AI rout pushes the S&amp;P 500 into a correction</h2>
-    <p>Nvidia −14% on a report of an SEC probe; Taiwan ends its worst week since 1991. <span class="src">(Reuters, CNBC)</span></p>
+    <p>Seventh straight fall; Nvidia −14% on a Reuters report of an SEC accounting probe. Taiwan's index ends its worst week since 1991. <span class="src">(Reuters, CNBC)</span></p>
   </div>
 
   <div class="card lead">
@@ -163,7 +163,7 @@
     </svg>
     <div class="kick"><span class="n">3</span>Gopalpur, India · Weather<span class="tag t-off">OFFICIAL</span></div>
     <h2>Cyclone Akvan makes landfall in Odisha</h2>
-    <p>It crossed the coast near Gopalpur; 372,000 people were moved to shelters, no deaths reported. <span class="src">(IMD, Odisha govt)</span></p>
+    <p>It crossed the coast near Gopalpur and weakened to a deep depression; 372,000 people were moved to shelters, no deaths reported. <span class="src">(IMD, Odisha govt)</span></p>
   </div>
 </div>
 
@@ -175,12 +175,13 @@
       <rect width="190" height="70" fill="#00337a"/>
       <g fill="#ffcc00" transform="translate(0,6)"><circle cx="40" cy="14" r="2.6"/><circle cx="52" cy="17" r="2.6"/><circle cx="60" cy="26" r="2.6"/><circle cx="62" cy="38" r="2.6"/><circle cx="56" cy="48" r="2.6"/><circle cx="44" cy="53" r="2.6"/><circle cx="31" cy="50" r="2.6"/><circle cx="22" cy="42" r="2.6"/><circle cx="20" cy="30" r="2.6"/><circle cx="26" cy="19" r="2.6"/></g>
       <g transform="translate(96,0)"><rect width="94" height="70" fill="#012169"/><path d="M0 0 L94 70 M94 0 L0 70" stroke="#fff" stroke-width="12"/><path d="M0 0 L94 70 M94 0 L0 70" stroke="#c8102e" stroke-width="4"/><path d="M47 0 V70 M0 35 H94" stroke="#fff" stroke-width="18"/><path d="M47 0 V70 M0 35 H94" stroke="#c8102e" stroke-width="10"/></g>
-      <path d="M70 46 q12 -10 26 -6 q14 -4 26 6 l-6 8 q-10 -6 -20 -2 q-10 -4 -20 2z" fill="#f2c9a0" stroke="#8a5a36" stroke-width="1.5"/>
+      <g transform="translate(74,22) rotate(-6)"><rect width="42" height="40" fill="#fff" stroke="#444" stroke-width="1.2"/><path d="M6 9 H36 M6 15 H36 M6 21 H30" stroke="#9aa3b3" stroke-width="2"/><path d="M6 32 q6 -6 10 0 t10 -2" stroke="#1d3a8a" stroke-width="1.6" fill="none"/></g>
       <text class="chip" x="4" y="4" data-s="14">UK–EU DEAL</text>
+      <text class="cap" x="4" y="53">Agreed · RTÉ</text>
     </svg>
     <div class="kick"><span class="n">4</span>Brussels · Diplomacy</div>
-    <h3>UK and EU seal a “reset” deal</h3>
-    <p>Food, carbon, youth visas. <span class="src">(RTÉ)</span></p>
+    <h3>UK and EU seal a food, carbon and visa deal</h3>
+    <p>A Brexit "reset"; start aimed for 2028. <span class="src">(RTÉ)</span></p>
   </div>
 
   <div class="card small">
@@ -190,9 +191,10 @@
       <circle cx="132" cy="40" r="22" fill="#fff" stroke="#16181d" stroke-width="3"/><path d="M132 40 V24 M132 40 L144 46" stroke="#b3261e" stroke-width="3" stroke-linecap="round"/>
       <text x="168" y="62" font-family="Segoe UI,Arial" font-weight="800" font-size="10" fill="#16181d" text-anchor="middle">+ OT</text>
       <text class="chip" x="4" y="4" data-s="14">COP31: NO DEAL</text>
+      <text class="cap" x="4" y="53">Talks run on · AP</text>
     </svg>
     <div class="kick"><span class="n">5</span>Antalya · Climate</div>
-    <h3>COP31 runs over with no deal</h3>
+    <h3>COP31 heads into overtime with no deal</h3>
     <p>Draft drops fossil-fuel words. <span class="src">(AP)</span></p>
   </div>
 
@@ -204,9 +206,10 @@
       <g fill="#2f3624"><circle cx="34" cy="51" r="5"/><circle cx="64" cy="51" r="5"/><circle cx="112" cy="51" r="5"/><circle cx="142" cy="51" r="5"/></g>
       <g transform="translate(164,8)"><rect width="22" height="5" fill="#ce1126"/><rect y="5" width="22" height="5" fill="#fff"/><rect y="10" width="22" height="5" fill="#000"/><rect x="-1" y="0" width="1.5" height="34" fill="#444"/></g>
       <text class="chip" x="4" y="4" data-s="14">IRAQ: ARMY IN</text>
+      <text class="cap" x="4" y="53">Deployed · Al Jazeera</text>
     </svg>
-    <div class="kick"><span class="n">6</span>Jurf al-Sakhar, Iraq</div>
-    <h3>Iraqi army enters a militia stronghold</h3>
+    <div class="kick"><span class="n">6</span>Jurf al-Sakhar, Iraq · Security</div>
+    <h3>Iraqi forces enter a militia stronghold</h3>
     <p>Deal with Kataib Hezbollah. <span class="src">(Al Jazeera)</span></p>
   </div>
 
@@ -225,10 +228,11 @@
       <g><rect x="164" y="6" width="1.5" height="22" fill="#444"/><rect x="165.5" y="6" width="7" height="10" fill="#009246"/><rect x="172.5" y="6" width="7" height="10" fill="#fff"/><rect x="179.5" y="6" width="7" height="10" fill="#ce2b37"/></g>
       <rect x="112" y="31" width="70" height="15" fill="#16181d"/><text x="147" y="42.5" font-family="Segoe UI,Arial" font-weight="800" font-size="10.5" fill="#fff" text-anchor="middle">SCIOPERO</text>
       <text class="chip" x="4" y="4" data-s="14">ITALY: STRIKE</text>
+      <text class="cap" x="4" y="53">Strike day · Reuters</text>
     </svg>
     <div class="kick"><span class="n">7</span>Rome, Italy · Labour</div>
-    <h3>General strike over Italy's budget</h3>
-    <p>CGIL's 24-hour stoppage. <span class="src">(Reuters)</span></p>
+    <h3>General strike over Meloni's budget</h3>
+    <p>CGIL union's 24-hour stoppage. <span class="src">(Reuters)</span></p>
   </div>
 
   <div class="card small">
@@ -239,10 +243,11 @@
       <g stroke="#c3c9d4" stroke-width="2"><path d="M112 22 H160 M112 30 H160 M112 38 H150 M112 46 H156"/></g>
       <g transform="rotate(-14 136 35)"><rect x="104" y="26" width="64" height="18" fill="none" stroke="#b3261e" stroke-width="2.5"/><text x="136" y="40" font-family="Segoe UI,Arial" font-weight="900" font-size="11.5" fill="#b3261e" text-anchor="middle">REJECTED</text></g>
       <text class="chip" x="4" y="4" data-s="14">"UNFAIR"</text>
+      <text class="cap" x="4" y="53">Govt statement · AP</text>
     </svg>
-    <div class="kick"><span class="n">8</span>Myanmar · Law</div>
-    <h3>Myanmar rejects ICJ genocide ruling</h3>
-    <p>Calls the verdict "unfair". <span class="src">(AP)</span></p>
+    <div class="kick"><span class="n">8</span>Naypyidaw, Myanmar · Law</div>
+    <h3>Myanmar rejects the ICJ genocide ruling</h3>
+    <p>Calls the Rohingya verdict "unfair". <span class="src">(AP)</span></p>
   </div>
 </div>
 
@@ -257,10 +262,11 @@
       <rect y="60" width="190" height="10" fill="#b58a52"/>
       <g transform="translate(130,26)"><rect width="52" height="8" fill="#000"/><rect y="8" width="52" height="2" fill="#fff"/><rect y="10" width="52" height="8" fill="#bb0000"/><rect y="18" width="52" height="2" fill="#fff"/><rect y="20" width="52" height="8" fill="#006600"/><ellipse cx="26" cy="14" rx="5" ry="11" fill="#bb0000" stroke="#000" stroke-width="1"/></g>
       <text class="chip" x="4" y="4" data-s="14">KENYA OIL</text>
+      <text class="cap" x="4" y="53">Well spudded · The Star</text>
     </svg>
     <div class="kick"><span class="n">9</span>Turkana, Kenya · Energy</div>
-    <h3>Kenya starts drilling its first oil</h3>
-    <p>First crude due 1 Dec. <span class="src">(The Star)</span></p>
+    <h3>Kenya starts drilling for its first oil</h3>
+    <p>First crude is due 1 Dec. <span class="src">(The Star)</span></p>
   </div>
 
   <div class="card small">
@@ -272,10 +278,11 @@
       <g fill="#fff" stroke="#3a4048" stroke-width="1"><circle cx="140" cy="40" r="5"/><circle cx="156" cy="50" r="5"/><circle cx="124" cy="54" r="5"/></g>
       <circle cx="174" cy="30" r="8" fill="none" stroke="#ff7a1a" stroke-width="4"/>
       <text class="chip" x="4" y="4" data-s="14">NIGERIA: CAPSIZE</text>
+      <text class="cap" x="4" y="53">Police count</text>
     </svg>
     <div class="kick"><span class="n">10</span>Bayelsa, Nigeria · Disaster</div>
-    <h3>Boat of mourners capsizes in Nigeria</h3>
-    <p>4 dead, 24 rescued. <span class="src">(Bayelsa police)</span></p>
+    <h3>Boat carrying mourners capsizes in Nigeria</h3>
+    <p>Police confirm 4 dead, 24 rescued; others missing. <span class="src">(police)</span></p>
   </div>
 
   <div class="card small">
@@ -287,6 +294,7 @@
       <text x="151" y="21" font-family="Segoe UI,Arial" font-weight="800" font-size="10" fill="#b3261e" text-anchor="middle">OCT</text>
       <rect x="78" y="62" width="88" height="2" fill="#16181d"/>
       <text class="chip" x="4" y="4" data-s="14">JAPAN: 2.3%</text>
+      <text class="cap" x="4" y="53">Official data · Reuters</text>
     </svg>
     <div class="kick"><span class="n">11</span>Tokyo · Economy</div>
     <h3>Japan's inflation rises to 2.3%</h3>
@@ -299,12 +307,13 @@
       <path d="M130 70 Q 150 34 190 26 V70 Z" fill="#cbb98a"/>
       <g transform="translate(150,14) rotate(30)"><rect x="0" y="0" width="12" height="46" rx="3" fill="#d9b98a" stroke="#8a6a3a" stroke-width="1.5"/><rect x="3" y="-16" width="6" height="18" fill="#3c3c3c"/></g>
       <circle cx="110" cy="40" r="7" fill="#c8102e"/><path d="M104 37 q6 3 12 0" stroke="#fff" stroke-width="1" fill="none"/>
-      <text x="52" y="54" font-family="Georgia" font-weight="700" font-size="28" fill="#16181d" text-anchor="middle">118</text>
+      <text x="60" y="46" font-family="Georgia" font-weight="700" font-size="26" fill="#16181d" text-anchor="middle">118</text>
       <text class="chip" x="4" y="4" data-s="14">PHILLIPS: 118</text>
+      <text class="cap" x="4" y="53">Scorecard · ICC</text>
     </svg>
     <div class="kick"><span class="n">12</span>Wellington · Cricket</div>
     <h3>Phillips hits 118 against India</h3>
-    <p>Tons in all 3 formats in 2026. <span class="src">(ICC)</span></p>
+    <p>Tons in all 3 formats vs India in a year. <span class="src">(ICC)</span></p>
   </div>
 
   <div class="card small">
@@ -314,10 +323,11 @@
       <g transform="translate(30,40) rotate(-12)"><rect width="70" height="16" rx="8" fill="#e8b23a"/><rect x="-14" y="8" width="0" height="0"/><path d="M0 8 h-12" stroke="#ff8a2a" stroke-width="5"/></g>
       <g transform="translate(96,46) rotate(-8)"><rect width="56" height="14" rx="7" fill="#e8b23a"/><path d="M0 7 h-10" stroke="#ff8a2a" stroke-width="5"/></g>
       <text class="chip" x="4" y="4" data-s="14">POLAND: 2 MISSILES</text>
+      <text class="cap" x="4" y="53">Officials · AP</text>
       <path d="M0 62 Q 50 54 100 62 T 190 60 V70 H0Z" fill="#7aa05a"/>
     </svg>
     <div class="kick"><span class="n">13</span>Eastern Poland · NATO</div>
-    <h3>Russian missiles land in Poland</h3>
+    <h3>Two Russian missiles land in Poland</h3>
     <p>NATO: a "grave violation". <span class="src">(AP)</span></p>
   </div>
 </div>
@@ -357,6 +367,8 @@
       <div><b class="i">31</b><b>Beijing</b> China joins Myanmar in objecting to the ICJ ruling</div>
       <div><b class="i">32</b><b>Sydney</b> ASX 200 has its worst week since June 2020</div>
       <div><b class="i">33</b><b>Odisha</b> 69 trains cancelled as rain follows Akvan</div>
+      <div><b class="i">34</b><b>Seoul</b> The Kospi ends the week 7.9% lower</div>
+      <div><b class="i">35</b><b>Santiago</b> Chile's peso hits its weakest since 2022</div>
     </div>
   </div>
 </div>
@@ -383,6 +395,15 @@
   ];
   const NS = 'http://www.w3.org/2000/svg';
   // Story labels: big white capitals on a red chip sized to the text, so they read at thumbnail size.
+  for (const t of document.querySelectorAll('text.cap')) {
+    const x = +t.getAttribute('x'), y = +t.getAttribute('y');
+    Object.assign(t.style, { fontFamily: 'Segoe UI, Arial', fontWeight: 700, fontSize: '9.5px', fill: '#fff' });
+    t.setAttribute('x', x + 4); t.setAttribute('y', y + 10);
+    const r = document.createElementNS(NS, 'rect');
+    r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', t.getComputedTextLength() + 8); r.setAttribute('height', 13.5);
+    r.setAttribute('fill', '#16181d'); r.setAttribute('opacity', '.88');
+    const svg = t.ownerSVGElement; svg.appendChild(r); svg.appendChild(t);
+  }
   for (const t of document.querySelectorAll('text.chip')) {
     const x = +t.getAttribute('x'), y = +t.getAttribute('y'), fs = +t.dataset.s, pad = Math.round(fs * 0.35);
     Object.assign(t.style, { fontFamily: 'Segoe UI, Arial', fontWeight: 800, fontSize: fs + 'px', fill: '#fff' });
@@ -402,7 +423,7 @@
   // story number -> [lon, lat]; small dots for the briefs
   const pins = [[1,30.5,50.4],[2,-74,40.7],[2,121.5,25],[3,84.9,19.3],[4,4.4,50.8],[5,30.7,36.9],[6,44.1,32.9],[7,12.5,41.9],
     [8,96.1,19.7],[9,35.8,2.5],[10,5.9,4.7],[11,139.7,35.7],[12,174.8,-41.3],[13,22.5,51.2]];
-  const dots = [[-77,38.9],[24,49.8],[24.7,59.4],[12.6,55.7],[37.6,55.8],[34.4,31.5],[56.2,26.2],[42.9,14.8],[28,13],[-4,5.3],[-99.1,19.4],[-81,28.5],[127,37.5],[121.5,25],[89.8,23],[116.4,39.9],[151.2,-33.9]];
+  const dots = [[-77,38.9],[24,49.8],[24.7,59.4],[12.6,55.7],[37.6,55.8],[34.4,31.5],[56.2,26.2],[42.9,14.8],[28,13],[-4,5.3],[-99.1,19.4],[-81,28.5],[127,37.5],[121.5,25],[89.8,23],[116.4,39.9],[151.2,-33.9],[-70.6,-33.4]];
   const g = document.getElementById('pins');
   for (const [lon, lat] of dots) {
     const [x, y] = P(lon, lat);
