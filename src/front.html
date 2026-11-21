@@ -21,12 +21,12 @@
     padding-bottom: 5px; border-bottom: 1px solid #16181d; }
   .nums { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; margin-bottom: 7px; }
   .nums div { border-left: 3px solid #b3261e; padding: 0 6px; }
-  .nums b { display: block; font-family: Georgia, serif; font-size: 21px; line-height: 1.05; }
+  .nums b { display: block; font-family: "Segoe UI", Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 1.05; }
   .nums span { display: block; font-size: 10.5px; line-height: 1.2; color: #3b3f48; }
 
   .regions { display: flex; gap: 2px; margin: -2px 0 6px; }
   .regions span { color: #fff; font-size: 10px; font-weight: 800; text-align: center; padding: 1px 0; letter-spacing: .03em; }
-  .leads { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 7px; }
+  .leads { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 7px; }
   .card svg { display: block; width: 100%; border-radius: 3px; }
   .kick { display: flex; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 800; letter-spacing: .05em;
     text-transform: uppercase; color: #b3261e; margin-top: 4px; white-space: nowrap; }
@@ -36,13 +36,13 @@
   .t-off { background: #fde9a8; color: #6b4e00; border: 1px solid #c9a227; }
   .t-con { background: #d8efd9; color: #1d5e25; border: 1px solid #3d8b45; }
   .t-rep { background: #e2e6ee; color: #39414f; border: 1px solid #7d8696; }
-  .lead h2 { font-family: Georgia, serif; font-size: 21px; line-height: 1.1; margin-top: 2px; }
+  .lead h2 { font-family: "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 25px; line-height: 1.08; margin-top: 2px; letter-spacing: -.3px; }
   .lead p { font-size: 11.8px; line-height: 1.3; margin-top: 3px; color: #2a2d34; }
   .src { color: #6a6f7a; }
 
-  .grid5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 6px; }
-  .small h3 { font-family: Georgia, serif; font-size: 14.6px; line-height: 1.1; margin-top: 1px; }
-  .small p { font-size: 10.5px; line-height: 1.25; margin-top: 2px; color: #2a2d34; }
+  .grid5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 6px; }
+  .small h3 { font-family: "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 17.5px; line-height: 1.08; margin-top: 1px; letter-spacing: -.2px; }
+  .small p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 10.8px; line-height: 1.25; margin-top: 2px; color: #2a2d34; }
   .small .kick { font-size: 9.5px; margin-top: 3px; }
   .small .n { width: 14px; height: 14px; font-size: 9px; }
 
@@ -114,7 +114,7 @@
     </svg>
     <div class="kick"><span class="n">1</span>Kyiv, Ukraine · War<span class="tag t-off">OFFICIAL</span></div>
     <h2>Russian missiles hit three of Kyiv's bridges</h2>
-    <p>One of the war's biggest barrages: 110+ missiles and 400 drones overnight; at least 8 killed across Ukraine, 6 of them in Kyiv. <span class="src">(Ukraine's PM, Kyiv mayor)</span></p>
+    <p>110+ missiles and 400 drones overnight; at least 8 killed across Ukraine, 6 in Kyiv. <span class="src">(Ukraine's PM, Kyiv mayor)</span></p>
   </div>
 
   <div class="card lead">
@@ -136,7 +136,7 @@
     </svg>
     <div class="kick"><span class="n">2</span>New York · Taipei · Tokyo · Markets<span class="tag t-con">CONFIRMED</span></div>
     <h2>AI rout pushes the S&amp;P 500 into a correction</h2>
-    <p>Seventh straight fall; Nvidia −14% on a Reuters report of an SEC accounting probe. Taiwan's index ends its worst week since 1991. <span class="src">(Reuters, CNBC)</span></p>
+    <p>Nvidia −14% on a report of an SEC probe; Taiwan ends its worst week since 1991. <span class="src">(Reuters, CNBC)</span></p>
   </div>
 
   <div class="card lead">
@@ -163,7 +163,7 @@
     </svg>
     <div class="kick"><span class="n">3</span>Gopalpur, India · Weather<span class="tag t-off">OFFICIAL</span></div>
     <h2>Cyclone Akvan makes landfall in Odisha</h2>
-    <p>It crossed the coast near Gopalpur and weakened to a deep depression; 372,000 people were moved to shelters, no deaths reported. <span class="src">(IMD, Odisha govt)</span></p>
+    <p>It crossed the coast near Gopalpur; 372,000 people were moved to shelters, no deaths reported. <span class="src">(IMD, Odisha govt)</span></p>
   </div>
 </div>
 
@@ -179,8 +179,8 @@
       <text class="chip" x="4" y="4" data-s="14">UK–EU DEAL</text>
     </svg>
     <div class="kick"><span class="n">4</span>Brussels · Diplomacy</div>
-    <h3>UK and EU seal a food, carbon and visa deal</h3>
-    <p>A Brexit "reset"; start aimed for 2028. <span class="src">(RTÉ)</span></p>
+    <h3>UK and EU seal a “reset” deal</h3>
+    <p>Food, carbon, youth visas. <span class="src">(RTÉ)</span></p>
   </div>
 
   <div class="card small">
@@ -192,7 +192,7 @@
       <text class="chip" x="4" y="4" data-s="14">COP31: NO DEAL</text>
     </svg>
     <div class="kick"><span class="n">5</span>Antalya · Climate</div>
-    <h3>COP31 heads into overtime with no deal</h3>
+    <h3>COP31 runs over with no deal</h3>
     <p>Draft drops fossil-fuel words. <span class="src">(AP)</span></p>
   </div>
 
@@ -205,8 +205,8 @@
       <g transform="translate(164,8)"><rect width="22" height="5" fill="#ce1126"/><rect y="5" width="22" height="5" fill="#fff"/><rect y="10" width="22" height="5" fill="#000"/><rect x="-1" y="0" width="1.5" height="34" fill="#444"/></g>
       <text class="chip" x="4" y="4" data-s="14">IRAQ: ARMY IN</text>
     </svg>
-    <div class="kick"><span class="n">6</span>Jurf al-Sakhar, Iraq · Security</div>
-    <h3>Iraqi forces enter a militia stronghold</h3>
+    <div class="kick"><span class="n">6</span>Jurf al-Sakhar, Iraq</div>
+    <h3>Iraqi army enters a militia stronghold</h3>
     <p>Deal with Kataib Hezbollah. <span class="src">(Al Jazeera)</span></p>
   </div>
 
@@ -227,8 +227,8 @@
       <text class="chip" x="4" y="4" data-s="14">ITALY: STRIKE</text>
     </svg>
     <div class="kick"><span class="n">7</span>Rome, Italy · Labour</div>
-    <h3>General strike over Meloni's budget</h3>
-    <p>CGIL union's 24-hour stoppage. <span class="src">(Reuters)</span></p>
+    <h3>General strike over Italy's budget</h3>
+    <p>CGIL's 24-hour stoppage. <span class="src">(Reuters)</span></p>
   </div>
 
   <div class="card small">
@@ -240,9 +240,9 @@
       <g transform="rotate(-14 136 35)"><rect x="104" y="26" width="64" height="18" fill="none" stroke="#b3261e" stroke-width="2.5"/><text x="136" y="40" font-family="Segoe UI,Arial" font-weight="900" font-size="11.5" fill="#b3261e" text-anchor="middle">REJECTED</text></g>
       <text class="chip" x="4" y="4" data-s="14">"UNFAIR"</text>
     </svg>
-    <div class="kick"><span class="n">8</span>Naypyidaw, Myanmar · Law</div>
-    <h3>Myanmar rejects the ICJ genocide ruling</h3>
-    <p>Calls the Rohingya verdict "unfair". <span class="src">(AP)</span></p>
+    <div class="kick"><span class="n">8</span>Myanmar · Law</div>
+    <h3>Myanmar rejects ICJ genocide ruling</h3>
+    <p>Calls the verdict "unfair". <span class="src">(AP)</span></p>
   </div>
 </div>
 
@@ -259,8 +259,8 @@
       <text class="chip" x="4" y="4" data-s="14">KENYA OIL</text>
     </svg>
     <div class="kick"><span class="n">9</span>Turkana, Kenya · Energy</div>
-    <h3>Kenya starts drilling for its first oil</h3>
-    <p>First crude is due 1 Dec. <span class="src">(The Star)</span></p>
+    <h3>Kenya starts drilling its first oil</h3>
+    <p>First crude due 1 Dec. <span class="src">(The Star)</span></p>
   </div>
 
   <div class="card small">
@@ -274,8 +274,8 @@
       <text class="chip" x="4" y="4" data-s="14">NIGERIA: CAPSIZE</text>
     </svg>
     <div class="kick"><span class="n">10</span>Bayelsa, Nigeria · Disaster</div>
-    <h3>Boat carrying mourners capsizes in Nigeria</h3>
-    <p>Police confirm 4 dead, 24 rescued; others missing. <span class="src">(police)</span></p>
+    <h3>Boat of mourners capsizes in Nigeria</h3>
+    <p>4 dead, 24 rescued. <span class="src">(Bayelsa police)</span></p>
   </div>
 
   <div class="card small">
@@ -304,7 +304,7 @@
     </svg>
     <div class="kick"><span class="n">12</span>Wellington · Cricket</div>
     <h3>Phillips hits 118 against India</h3>
-    <p>Tons in all 3 formats vs India in a year. <span class="src">(ICC)</span></p>
+    <p>Tons in all 3 formats in 2026. <span class="src">(ICC)</span></p>
   </div>
 
   <div class="card small">
@@ -317,7 +317,7 @@
       <path d="M0 62 Q 50 54 100 62 T 190 60 V70 H0Z" fill="#7aa05a"/>
     </svg>
     <div class="kick"><span class="n">13</span>Eastern Poland · NATO</div>
-    <h3>Two Russian missiles land in Poland</h3>
+    <h3>Russian missiles land in Poland</h3>
     <p>NATO: a "grave violation". <span class="src">(AP)</span></p>
   </div>
 </div>
