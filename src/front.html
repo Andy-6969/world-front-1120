@@ -48,7 +48,8 @@
 
   .bottom { display: grid; grid-template-columns: 290px 1fr; gap: 12px; border-top: 2px solid #16181d; padding-top: 5px; }
   .sec { font-size: 10.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: #b3261e; margin-bottom: 3px; }
-  .briefs { columns: 2; column-gap: 14px; font-size: 11.2px; line-height: 1.34; }
+  .briefs { columns: 2; column-gap: 14px; font-size: 11.2px; line-height: 1.36; }
+  .briefs div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .briefs div { break-inside: avoid; }
   .briefs b.i { display: inline-block; width: 15px; color: #b3261e; }
   .datecheck { margin-top: 6px; border: 1.5px solid #b3261e; background: #fff8f4; padding: 4px 8px; font-size: 11px; line-height: 1.32; }
@@ -58,7 +59,7 @@
 </head>
 <body>
 
-<div class="topbar"><span class="k">The world in one day</span><span>28 stories · 6 regions · every one from Friday 20 November 2026</span></div>
+<div class="topbar"><span class="k">The world in one day</span><span>33 stories · 6 regions · every one from Friday 20 November 2026</span></div>
 <h1>Friday 20 November 2026</h1>
 <div class="deck">Russian missiles hit Kyiv's bridges and land in Poland · An AI sell-off drives Wall Street into a correction · Cyclone Akvan strikes India</div>
 
@@ -72,8 +73,8 @@
 </div>
 
 <div class="regions">
-  <span style="background:#2f5d9e;flex:7">Europe 7</span><span style="background:#b3261e;flex:8">Asia 8</span><span style="background:#c07a12;flex:4">Middle East 4</span>
-  <span style="background:#3d8b45;flex:3">Africa 3</span><span style="background:#7b4fa0;flex:3">Americas 3</span><span style="background:#1f8a8a;flex:2">Oceania 2</span><span style="background:#555b66;flex:1.4">Global 1</span>
+  <span style="background:#2f5d9e;flex:8">Europe 8</span><span style="background:#b3261e;flex:8">Asia 8</span><span style="background:#c07a12;flex:5">Middle East 5</span>
+  <span style="background:#3d8b45;flex:4">Africa 4</span><span style="background:#7b4fa0;flex:4">Americas 4</span><span style="background:#1f8a8a;flex:2.2">Oceania 2</span><span style="background:#555b66;flex:2.2">Global 2</span>
 </div>
 
 <!-- ===================== THREE LEAD STORIES ===================== -->
@@ -264,16 +265,17 @@
 
   <div class="card small">
     <svg viewBox="0 0 190 68">
-      <rect width="190" height="70" fill="#e3ebf5"/>
-      <path d="M40 26 L95 8 L150 26 Z" fill="#c4ccd8" stroke="#5a6478" stroke-width="2"/>
-      <rect x="44" y="26" width="102" height="6" fill="#aab3c2"/>
-      <g fill="#fff" stroke="#5a6478" stroke-width="1.5"><rect x="52" y="32" width="8" height="26"/><rect x="72" y="32" width="8" height="26"/><rect x="92" y="32" width="8" height="26"/><rect x="112" y="32" width="8" height="26"/><rect x="132" y="32" width="8" height="26"/></g>
-      <rect x="38" y="58" width="114" height="8" fill="#aab3c2"/>
-      <text class="chip" x="4" y="4" data-s="14">IMPEACH?</text>
+      <rect width="190" height="70" fill="#4f7f73"/>
+      <path d="M0 22 Q 50 16 100 24 T 190 20" stroke="#7fb0a2" stroke-width="2" fill="none"/>
+      <path d="M0 44 Q 60 38 120 46 T 190 42" stroke="#7fb0a2" stroke-width="2" fill="none"/>
+      <g transform="translate(70,40) rotate(-24)"><path d="M-36 0 H40 L30 12 H-28 Z" fill="#e2e6ea" stroke="#3a4048" stroke-width="2"/><rect x="-18" y="-10" width="30" height="10" fill="#c94f3d"/></g>
+      <g fill="#fff" stroke="#3a4048" stroke-width="1"><circle cx="140" cy="40" r="5"/><circle cx="156" cy="50" r="5"/><circle cx="124" cy="54" r="5"/></g>
+      <circle cx="174" cy="30" r="8" fill="none" stroke="#ff7a1a" stroke-width="4"/>
+      <text class="chip" x="4" y="4" data-s="14">NIGERIA: CAPSIZE</text>
     </svg>
-    <div class="kick"><span class="n">10</span>Seoul · Politics</div>
-    <h3>Seoul's ruling party moves to impeach top judge</h3>
-    <p>Party adopts it as policy. <span class="src">(Korea Herald)</span></p>
+    <div class="kick"><span class="n">10</span>Bayelsa, Nigeria · Disaster</div>
+    <h3>Boat carrying mourners capsizes in Nigeria</h3>
+    <p>Police confirm 4 dead, 24 rescued; others missing. <span class="src">(police)</span></p>
   </div>
 
   <div class="card small">
@@ -335,21 +337,26 @@
   <div>
     <div class="sec">Also on Friday 20 November</div>
     <div class="briefs">
-      <div><b class="i">14</b><b>Washington</b> Trump says Putin wants peace and a deal has "a real good chance" (Fox News)</div>
-      <div><b class="i">15</b><b>Lviv</b> A strike on the railway station kills two (officials)</div>
-      <div><b class="i">16</b><b>Tallinn</b> Estonia approves shutting all five road crossings with Russia from 1 Dec</div>
-      <div><b class="i">17</b><b>Gaza</b> Israeli strikes kill six despite the ceasefire (civil defence)</div>
-      <div><b class="i">18</b><b>Hormuz</b> A tanker hit near Khasab, Oman, catches fire (UKMTO)</div>
-      <div><b class="i">19</b><b>Kordofan</b> Sudan's army says it took Al-Khuway from the RSF</div>
-      <div><b class="i">20</b><b>Mexico City</b> Sheinbaum leads the 116th Revolution Day parade</div>
-      <div><b class="i">21</b><b>New York</b> Anthropic falls 8.5% on day two, still above its $83 IPO price</div>
-      <div><b class="i">22</b><b>Taipei</b> The Taiex loses 17.5% on the week, its worst since 1991</div>
-      <div><b class="i">23</b><b>Seoul</b> The Kospi ends the week 7.9% lower</div>
-      <div><b class="i">24</b><b>Odisha</b> 69 trains cancelled or rescheduled as heavy rain follows Akvan</div>
-      <div><b class="i">25</b><b>Beijing</b> China joins Myanmar in objecting to the ICJ ruling</div>
-      <div><b class="i">26</b><b>Moscow</b> Russia calls Estonia's border closure a "new Iron Curtain"</div>
-      <div><b class="i">27</b><b>Abidjan</b> AfDB: 22 African countries in or near debt distress</div>
-      <div><b class="i">28</b><b>Sydney</b> ASX 200 −1.6%; worst week since June 2020</div>
+      <div><b class="i">14</b><b>Washington</b> Trump says Putin “wants peace”</div>
+      <div><b class="i">15</b><b>Lviv</b> A strike on the railway station kills two</div>
+      <div><b class="i">16</b><b>Tallinn</b> Estonia to shut all road crossings to Russia from 1 Dec</div>
+      <div><b class="i">17</b><b>Copenhagen</b> Denmark expels Russian attaché over a murder plot</div>
+      <div><b class="i">18</b><b>Moscow</b> Russia calls Estonia's move a “new Iron Curtain”</div>
+      <div><b class="i">19</b><b>Gaza</b> Israeli strikes kill six despite the truce</div>
+      <div><b class="i">20</b><b>Hormuz</b> A tanker hit off Khasab, Oman, catches fire</div>
+      <div><b class="i">21</b><b>Yemen</b> Saudi-led coalition strikes Houthi-held Hodeidah</div>
+      <div><b class="i">22</b><b>Kordofan</b> Sudan's army says it took Al-Khuway from the RSF</div>
+      <div><b class="i">23</b><b>Abidjan</b> AfDB: 22 African states in or near debt distress</div>
+      <div><b class="i">24</b><b>Mexico City</b> Sheinbaum leads the Revolution Day parade</div>
+      <div><b class="i">25</b><b>Florida</b> Floods put 21 counties under emergency</div>
+      <div><b class="i">26</b><b>New York</b> Anthropic −8.5%, still above its $83 IPO price</div>
+      <div><b class="i">27</b><b>Crypto</b> Bitcoin falls below $60,000, first since July</div>
+      <div><b class="i">28</b><b>Seoul</b> Ruling party to seek the chief justice's impeachment</div>
+      <div><b class="i">29</b><b>Taipei</b> Taiex −17.5% on the week, worst since 1991</div>
+      <div><b class="i">30</b><b>Bangladesh</b> Police station torched in Gopalganj unrest</div>
+      <div><b class="i">31</b><b>Beijing</b> China joins Myanmar in objecting to the ICJ ruling</div>
+      <div><b class="i">32</b><b>Sydney</b> ASX 200 has its worst week since June 2020</div>
+      <div><b class="i">33</b><b>Odisha</b> 69 trains cancelled as rain follows Akvan</div>
     </div>
   </div>
 </div>
@@ -394,8 +401,8 @@
   }
   // story number -> [lon, lat]; small dots for the briefs
   const pins = [[1,30.5,50.4],[2,-74,40.7],[2,121.5,25],[3,84.9,19.3],[4,4.4,50.8],[5,30.7,36.9],[6,44.1,32.9],[7,12.5,41.9],
-    [8,96.1,19.7],[9,35.8,2.5],[10,127,37.5],[11,139.7,35.7],[12,174.8,-41.3],[13,22.5,51.2]];
-  const dots = [[-77,38.9],[24,49.8],[24.7,59.4],[34.4,31.5],[56.2,26.2],[28,13],[-99.1,19.4],[37.6,55.8],[-4,5.3],[151.2,-33.9]];
+    [8,96.1,19.7],[9,35.8,2.5],[10,5.9,4.7],[11,139.7,35.7],[12,174.8,-41.3],[13,22.5,51.2]];
+  const dots = [[-77,38.9],[24,49.8],[24.7,59.4],[12.6,55.7],[37.6,55.8],[34.4,31.5],[56.2,26.2],[42.9,14.8],[28,13],[-4,5.3],[-99.1,19.4],[-81,28.5],[127,37.5],[121.5,25],[89.8,23],[116.4,39.9],[151.2,-33.9]];
   const g = document.getElementById('pins');
   for (const [lon, lat] of dots) {
     const [x, y] = P(lon, lat);
